@@ -2,14 +2,6 @@
 
 Email template built with Foundation using HTML, SASS and Handlebars
 
-## Foundation for Emails Template
-
-[![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
-
-**Please open all issues with this template on the main [Foundation for Emails](http://github.com/zurb/foundation-emails/issues) repo.**
-
-This is the official starter project for [Foundation for Emails](http://foundation.zurb.com/emails), a framework for creating responsive HTML devices that work in any email client. It has a Gulp-powered build system with these features:
-
 - Handlebars HTML templates with [Panini](http://github.com/zurb/panini)
 - Simplified HTML email syntax with [Inky](http://github.com/zurb/inky)
 - Sass compilation
@@ -17,7 +9,7 @@ This is the official starter project for [Foundation for Emails](http://foundati
 - Built-in BrowserSync server
 - Full email inlining process
 
-## Installation
+## Foundation: Local Usage And Installation
 
 To use this template, your computer needs [Node.js](https://nodejs.org/en/) 0.12 or greater. The template can be installed with the Foundation CLI, or downloaded and set up manually.
 
@@ -33,23 +25,6 @@ Use this command to set up a blank Foundation for Emails project:
 
 ```bash
 foundation new --framework emails
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-emails-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
 ```
 
 ## Build Commands
@@ -101,39 +76,5 @@ Testing in Litmus requires the images to be hosted publicly. The provided gulp t
   }
 }
 ```
-
-## Manual email tests (config.json)
-
-Similar to the Litmus tests, you can have the emails sent to a specified email address. Just like with the Litmus tests, you will need to provide AWS S3 account details in `config.json`. You will also need to specify to details of an SMTP server. The email address to send to emails to can either by configured in the `package.json` file or added as a parameter like so: `npm run mail -- --to="example.com"`
-
-```json
-{
-  "aws": {
-    "region": "us-east-1",
-    "accessKeyId": "YOUR_ACCOUNT_KEY",
-    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
-    "params": {
-      "Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-    },
-    "url":
-      "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-  },
-  "mail": {
-    "to": ["example@domain.com"],
-    "from": "Company name <info@company.com",
-    "smtp": {
-      "auth": {
-        "user": "example@domain.com",
-        "pass": "12345678"
-      },
-      "host": "smtp.domain.com",
-      "secureConnection": true,
-      "port": 465
-    }
-  }
-}
-```
-
-For a full list of Litmus' supported test clients(applications) see their [client list](https://litmus.com/emails/clients.xml).
 
 **Caution:** AWS Service Fees will result, however, are usually very low do to minimal traffic. Use at your own discretion.
