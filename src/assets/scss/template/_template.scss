@@ -1,0 +1,63 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+body,
+html,
+.body {
+  background: #f3f3f3 !important;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: #8a8a8a;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+// Social Media
+i {
+  padding-right: 10px;
+}
+
+table.button.linkedin table td {
+  background: #0077b5 !important;
+  border-color: #0077b5;
+}
+
+table.button.github table td {
+  background: $black !important;
+  border-color: $black !important;
+}
+
+table.button.google table td {
+  background: #db4a39 !important;
+  border-color: #db4a39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
