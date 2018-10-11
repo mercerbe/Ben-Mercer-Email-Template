@@ -15,6 +15,12 @@ import colors   from 'colors';
 
 const $ = plugins();
 
+//fonts served to dist
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/@fontawesome/fontawesome-free/*')
+    .pipe(gulp.dest('dist/fonts'))
+})
+
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
 const EMAIL = yargs.argv.to;

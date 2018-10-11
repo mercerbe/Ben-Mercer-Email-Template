@@ -1,10 +1,14 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
+//font awesome
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_variables.scss";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_mixins.scss";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_core.scss";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_icons.scss";
 
 // Body Styles
 body,
 html,
-.body {
+.body,
+.center {
   background: #fefefe !important;
 }
 
