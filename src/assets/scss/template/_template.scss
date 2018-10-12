@@ -1,8 +1,5 @@
 //font awesome
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_variables.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_mixins.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_core.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/_icons.scss";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 // Body Styles
 body,
@@ -39,8 +36,8 @@ html,
 }
 
 // Social Media
-i {
-  padding-right: 10px;
+img {
+  padding-left: 50px;
 }
 
 table.button.linkedin table td {
